@@ -89,9 +89,44 @@ jupyter notebook
 3. Pandas:- It is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
 4. matplotlib: It is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+
 ## Procedure <a name = "procedure"></a>
 
-Add notes about how to use the system.
+First, Get the url of the website and using the requests library, access the webpage
+
+```
+imbd_url='https://www.imdb.com/chart/top/?ref_=nv_mv_250'
+
+```
+```
+response= requests.get(imbd_url)
+```
+
+Using BeautifulSoup library , get the html doctype of the webpage
+
+```
+
+m= soup.find('tbody', {'class':"lister-list"}).find_all('tr')
+
+```
+Extract the required data from the webpage. Code for extraction is in IMDB top 250.ipyn file
+Store the data in a dictionary and then convert the dictionary to a dataframe
+
+```
+
+dict={"Movie Name":names, "Year of Release": years, "IMDB Rating": rating, "Rank":rank}
+
+df= pd.DataFrame(dict)
+```
+
+Convert to a csv file
+[ImdbMovies.csv](https://github.com/arpitahb/IMDB-Top-250-Movies-Web-Scraping-and-Data-Visualization-/files/9368036/ImdbMovies.csv)
+
+
+### Data Visualization 
+
+Using matplotlib.pyplot, we perform some simple data visualization operations
 ## Resources <a name = "resources"></a>
 1. https://realpython.com/python-web-scraping-practical-introduction/
 2. https://www.dataquest.io/blog/web-scraping-tutorial-python/
