@@ -126,7 +126,57 @@ Convert to a csv file
 
 ### Data Visualization 
 
-Using matplotlib.pyplot, we perform some simple data visualization operations
+Using matplotlib.pyplot, we perform some simple data visualization operations:
+ 
+ To Obtain The mean of the IMDB Rating. We first convert the column to datatype float and then use mean()
+```
+df['IMDB Rating']= df['IMDB Rating'].astype(float)
+df['IMDB Rating'].mean()
+```
+Output: 8.253999999999976
+
+Ploting a histogram of the imdb ratings:
+
+```
+
+df['IMDB Rating'].plot(kind='hist', bins=20)
+```
+![histogram_plot](https://user-images.githubusercontent.com/91077436/185306341-6e06960a-82a7-4ee2-9988-40188654ec57.png)
+
+This histogram tells us that the most movies in this list has an IMDB Rating of 8
+
+ The same data ploted in box form:
+ 
+```
+df['IMDB Rating'].plot(kind='box')
+
+```
+
+![box_plot](https://user-images.githubusercontent.com/91077436/185306615-dcd7ec5c-0a1f-4e91-95f4-87f1c4d5224f.png)
+
+The green line is the median
+
+Taking The top 10 Imdb Movies and ploting a graph:
+
+```
+
+df1= df.head(10)
+```
+
+```
+
+x=df1['IMDB Rating']
+y=df1['Year of Release']
+plt.plot(x,y)
+plt.xlabel('IMDB Ratings')
+plt.ylabel('Year of Release')
+plt.title("Top 10 IMDB Movies")
+
+```
+![top 10 movies](https://user-images.githubusercontent.com/91077436/185306970-270af7e4-a39d-4cd2-a8db-8a367c57d801.png)
+
+
+
 ## Resources <a name = "resources"></a>
 1. https://realpython.com/python-web-scraping-practical-introduction/
 2. https://www.dataquest.io/blog/web-scraping-tutorial-python/
