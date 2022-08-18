@@ -47,6 +47,7 @@ To activate:
 conda activate envnew
 ```
 
+
 #### 4. pip
 We use pip command to install all the modules and libraries.
 
@@ -66,6 +67,21 @@ To activate:
 ```
 jupyter notebook
 ```
+
+### RoadMap
+
+#### WEB SCRAPING
+1. Go To IMDB Top 250 Movies Page and copy the URL
+2. import libraries BeautifulSoup and requests in Jupyter Notebook
+3. request to get the page and save the html format
+4. In the webpage, click inspect the <!DOCTYPE html>
+5. Get the Movie Name, Year of release, rank and rating 
+
+#### DATA VISUALIZATION
+1. import pandas and matplotlib libraries
+2. get the data from the webpage into a DataFrame
+3. Produce a csv file
+4. Use matplotlib library to perform basic data visualization operatio
 
 ## Libraries <a name = "libraries"></a>
 1. Requests:- It is an efficient HTTP library used for accessing web page.
