@@ -68,23 +68,11 @@ jupyter notebook
 ```
 
 ## Libraries <a name = "libraries"></a>
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
+1. Requests:- It is an efficient HTTP library used for accessing web page.
+2. BeautifulSoup library:-  It is a Python library for pulling data out of HTML and XML files.
+3. Pandas:- It is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language.
+4. matplotlib: It is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 ## Procedure <a name = "procedure"></a>
 
 Add notes about how to use the system.
