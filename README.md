@@ -34,7 +34,38 @@ We can check if the anaconda navigator is installed properly using command
 conda install --help
 ```
 
+#### 3. Create environment
+Virtualenv is a tool to create isolated Python environments. With the help of virtualenv, we can create a folder that contains all necessary executables to use the packages that our Python project requires. Here we can add and modify python modules without affecting any global installation.
 
+To create:
+```
+conda create --name envnew
+```
+To activate:
+
+```
+conda activate envnew
+```
+
+#### 4. pip
+We use pip command to install all the modules and libraries.
+
+```
+conda install pip
+```
+
+#### 5. Jupyter Notebook
+The Jupyter Notebook App is a server-client application that allows editing and running notebook documents via a web browser. The Jupyter Notebook App can be executed on a local desktop requiring no internet access (as described in this document) or can be installed on a remote server and accessed through the internet.
+Our project is done using Jupyter notebook
+
+To install:
+```
+conda install jupyter notebok
+```
+To activate:
+```
+jupyter notebook
+```
 
 ## Libraries <a name = "libraries"></a>
 
