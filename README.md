@@ -16,15 +16,25 @@ Web scraping is an automatic method to obtain large amounts of data from website
 Data visualization is the representation of data through use of common graphics, such as charts, plots, infographics, and even animations. These visual displays of information communicate complex data relationships and data-driven insights in a way that is easy to understand.In this Project, I used the library matplotlib to perform simple data visualization operations on the obtained data
 
 ## Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These steps are followed before undertaking the project:
 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
 
+#### 1. Anaconda Navigator
+It is a desktop application which  lets you easily manage integrated applications, packages, and environments without using the command line.
+It can be installed from https://www.anaconda.com/products/distribution
+
+#### 2. Anaconda prompt
+Anaconda command prompt is just like command prompt, but it makes sure that you are able to use anaconda and conda commands from the prompt, without having to change directories or your path. 
+We can check if the anaconda navigator is installed properly using command
+
 ```
-Give examples
+conda install --help
 ```
+
+
 
 ## Libraries <a name = "libraries"></a>
 
