@@ -175,6 +175,51 @@ plt.title("Top 10 IMDB Movies")
 ```
 ![top 10 movies](https://user-images.githubusercontent.com/91077436/185306970-270af7e4-a39d-4cd2-a8db-8a367c57d801.png)
 
+#### Using  a visualization to detect whether there is a relationship between year of release and imdb rating:
+Average IMDB Rating for movies released after 1994
+
+```
+
+df[df['Year of Release']>=1994]['IMDB Rating'].mean()
+
+```
+
+
+Average IMDB Rating for movies released before 1994
+
+
+```
+df[df['Year of Release']<1994]['IMDB Rating'].mean()
+```
+
+Plotting a graph:
+```
+df.boxplot(column='Year of Release', by='IMDB Rating')
+```
+
+![imdb-year](https://user-images.githubusercontent.com/91077436/185307601-6819ac8d-0b47-4fa9-8de7-25dbd3e5e392.png)
+
+To find: The year of release of the maximum number of movies in Top 250 IMDB List
+
+```
+df['Year of Release'].value_counts()[df['Year of Release'].value_counts() == df['Year of Release'].value_counts().max()]
+```
+output:
+1995.0    8
+Name: Year of Release, dtype: int64
+
+Plotting the movies released in 1995:
+```
+x=df2['Movie Name']
+y=df2['Rank']
+plt.plot(x,y)
+plt.title("Movies Released in year 1995")
+plt.xlabel("Movie Name")
+plt.ylabel("Ranks")
+plt.rcParams["figure.figsize"] = (100,10)
+```
+
+![1995](https://user-images.githubusercontent.com/91077436/185307944-f58eba93-3a02-4e70-b517-639220c23a27.png)
 
 
 ## Resources <a name = "resources"></a>
