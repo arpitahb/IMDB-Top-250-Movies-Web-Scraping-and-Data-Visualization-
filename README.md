@@ -77,3 +77,7 @@ built on top of the Python programming language.
 
 Add notes about how to use the system.
 ## Resources <a name = "resources"></a>
+1. https://realpython.com/python-web-scraping-practical-introduction/
+2. https://www.dataquest.io/blog/web-scraping-tutorial-python/
+3. https://jovian.ai/aakashns/python-web-scraping-project-guide
+4. https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb
