@@ -8,7 +8,12 @@
 + [Resources](#resources)
 
 ## About <a name = "about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
+A simple project that I did while learning Web scraping and Data Visualization. In this mission, I learned various concepts of web scraping and get comfortable with scraping various types of websites and their data.On the other hand I also understood the concept and use of data visualization tools and libraries
+### Web Scraping
+Web scraping is an automatic method to obtain large amounts of data from websites. Most of this data is unstructured data in an HTML format which is then converted into structured data in a spreadsheet or a database so that it can be used in various applications. There are many different ways to perform web scraping to obtain data from websites. In this project, I extracted data from the website https://www.imdb.com/chart/top/?ref_=nv_mv_250 . The data obtained were: Movie name, Year of release, Ranking and IMDB Rating
+
+### Data Visualization
+Data visualization is the representation of data through use of common graphics, such as charts, plots, infographics, and even animations. These visual displays of information communicate complex data relationships and data-driven insights in a way that is easy to understand.In this Project, I used the library matplotlib to perform simple data visualization operations on the obtained data
 
 ## Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
